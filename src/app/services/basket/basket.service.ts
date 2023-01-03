@@ -38,6 +38,7 @@ private createBasket() {
 private saveBasket(basket: BasketProduct[]) {
   localStorage.setItem('basket', JSON.stringify(basket));
   this.getBasketTotalPrice();
+  this.getTotalQuantity();
 }
 
 
@@ -97,7 +98,7 @@ getBasketTotalPrice(): void {
 
 
 //Fonction pour connaitre la quantité de produit dans le panier
-getProductQuantity(): void {
+getTotalQuantity(): void {
   // on recupere le panier
   const basket = this.getBasket();
   // on calcule le nombre de produits
