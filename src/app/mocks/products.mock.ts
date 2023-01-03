@@ -1,4 +1,4 @@
-type Category='skirts'|'pants';
+type Category='skirts'|'pants'|'jackets'|'tshirts';
 export interface Product{
     id:number;
     title:string;
@@ -6,7 +6,7 @@ export interface Product{
     price:number;
     color:string;
     image:string;
-    isAvaible:boolean;
+    isAvailable:boolean;
     category:Category;
 }
 export const PRODUCTS:Product[]=[
@@ -17,7 +17,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"noir",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
     {
@@ -27,7 +27,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"rose",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
     {
@@ -37,7 +37,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"kaki",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
     {
@@ -47,7 +47,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"vert",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
     {
@@ -57,7 +57,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"jeans bleu",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
     {
@@ -67,7 +67,7 @@ export const PRODUCTS:Product[]=[
         price:15,
         color:"beige",
         image:"asset/img/pants/pantalon-Noir",
-        isAvaible:true,
+        isAvailable:true,
         category:"pants"
     },
 
