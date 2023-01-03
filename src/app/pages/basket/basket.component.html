@@ -1,1 +1,91 @@
-<p>basket works!</p>
+<main>
+
+
+    <section id="panier-livraison" class="flex">
+        <div id="bloc-panier">
+
+            <h2>MON PANIER</h2>
+
+            <div class="sous-bloc-panier flex">
+
+                <img class="image-article" src="assets/Images/allcategories_tshirt.png" alt="">
+                <div class="bloc-description-prix flex column">
+                    <div class="description-article">
+                        <p>Nom de l'article</p>
+                        <br>
+                        <p>Description de l'article, 100% coton, matiere naturelle.</p>
+                    </div>
+
+                    <div class="prix">
+                        <p class="prix-veste violet">80€</p>
+                        <br>
+                        <a href="#">Supprimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="bloc-livraison flex">
+
+            <h2>LIVRAISON</h2>
+            <div class="sous-bloc-livraison flex">
+
+
+                <div class="flex column">
+                    <form class="modalites flex">
+                        <div class="domicile">
+                            <input class="checkbox-livraison" type="checkbox">
+                            <label type="text">A domicile</label>
+                        </div>
+                        <br>
+                        <div class="relais">
+                            <input class="checkbox-livraison" type="checkbox">
+                            <label type="text">Point relais</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="commander-shopper flex">
+                    <a href="paiement.html">
+                        <button class="bouton-commander violet">COMMANDER</button>
+                    </a>
+                    <br>
+                    <a href="TouteCategorie.html">Continuez à shopper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="promo-total">
+        <div class="code-promo">
+            <h2>CODE PROMO</h2>
+            <form class="flex">
+                <input type="text">
+                <button type="submit" class="violet">APPLIQUER</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="montant-panier">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Sous-total</td>
+                        <td class="violet">125€</td>
+                    </tr>
+                    <tr>
+                        <td>Livraison</td>
+                        <td class="violet">10€</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="violet">135€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</main>

@@ -11,6 +11,7 @@ export class ProductsService {
   getProducts():Product[]{
     return PRODUCTS;
   }
+  //retourne un produit par id
   getProduct(id:number): Product | undefined{
     return PRODUCTS.find(product=>product.id ===id);
   }
