@@ -33,6 +33,7 @@ const routes: Routes = [
   component: CategoryPantsComponent
 },
 
+
 {
   path:"category-skirts",
   component: CategorySkirtsComponent
