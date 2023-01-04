@@ -5,4 +5,36 @@
 
 .flexboxBig{
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+h2{
+    color: #7461CC;
+    text-align: center;
+}
+
+.imgBloc{
+    width: 600px;
+    height: 600px;
+}
+
+button{
+    background-color: #7461CC;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #32C4F6;
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
 }
