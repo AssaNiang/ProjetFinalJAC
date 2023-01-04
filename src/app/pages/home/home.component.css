@@ -1,0 +1,8 @@
+.flexboxSmall{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexboxBig{
+    display: flex;
+}

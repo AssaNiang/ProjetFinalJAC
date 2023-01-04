@@ -4,10 +4,20 @@
 <!-- créer un component "banner" pour les pages qui ont une bannière ? -->
 
 <article *ngFor="let item of homeArray">
-    <img src="{{ item.imageHome }}">
-    <h2> {{ item.titleHome }}</h2>
-    <p>{{ item.descriptionHome }} </p>
-    <button><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></button>
+
+    <div class="flexboxBig">
+
+        <img src="{{ item.imageHome }}">
+
+        <div class="flexboxSmall">
+            <h2> {{ item.titleHome }}</h2>
+            <p>{{ item.descriptionHome }} </p>
+            <button><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></button>
+        </div>
+
+    </div>
+
+
 </article>
 
 <h2>Best-sellers par catégories</h2>
@@ -17,3 +27,4 @@
 
 
 <h2>Notre actualité</h2>
+
