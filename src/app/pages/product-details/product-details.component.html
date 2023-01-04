@@ -1,7 +1,7 @@
 
 <main *ngIf="productP">
     <h2>{{productP.title}}- {{productP.price}}€</h2>
-    <!-- <img src="assets/img/pants/pantalon-Noir.png" alt="Pantalon Noir"> -->
+    <img src="{{ productP.image }}" alt="{{productP.title}}">
     <p>{{productP.description}}</p>
     <button (click)="addToBasket()">Ajouter au panier</button>
 </main>

@@ -18,5 +18,10 @@ export class BasketComponent {
   getbasket() {
     this.basket = this.basketService.getBasket();
   }
- 
+ removeProduct(index: number) {
+  this.basketService.removeProduct(index);
+  
+  this.getbasket();
+  
+ }
 }

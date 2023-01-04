@@ -17,8 +17,10 @@ export interface BasketProduct {
 export class BasketService {
 
   // deux propriétes du service du panier de type number initialisées à 0
-  basketTotal: number = 0;
+  basketTotalPrice: number = 0;
   productQuantity: number = 0 ;
+  
+  
 
 // je mets dans le constructor le service product service
   constructor(private productsService : ProductsService) { }
@@ -86,8 +88,8 @@ addToBasket(basketProduct : BasketProduct) {
    const basketProductId = basket.indexOf(productExists);
    // on incremente la quantité du produit dans le panier
    basket[basketProductId].quantity += basketProduct.quantity;
-    console.log("quantité panier", basket[basketProductId].quantity);
-    console.log("quantité article ajouté", basketProduct.quantity);
+   // console.log("quantité panier", basket[basketProductId].quantity);
+   // console.log("quantité article ajouté", basketProduct.quantity);
 
   } else {
     // sinon on ajoute le produit dans le panier
@@ -106,14 +108,17 @@ getBasketTotalPrice(): void {
   const basket = this.getBasket();
   // on utilise la méthode reduce avec accumulator et current value pour avoir le prix total du panier
   const totalPrice = basket.reduce((accumulator:number, currentValue: BasketProduct) =>{
-    // 
-    const product = this.productsService.getProduct(currentValue.product.id) 
-    // on calcule prix total
+    // je recupere mon produit par id dans mon mock
+    const product = this.productsService.getProduct(currentValue.product.id);
+    //si le produit n'existe pas je retourne juste la valeur de l'accumulateur
+    if(!product) return accumulator;
+    // si le produit existe, on retourne le produit de l'accumulateur et le prix du prouit : on calcule prix total
     return accumulator + (currentValue.quantity * product!.price);
     // initialisation de l'accumulateur à 0
   },0);
   // on donne la valeur du total du panier à la propriété basketTotal du basket Service
-  this.basketTotal = totalPrice;
+  this.basketTotalPrice = totalPrice;
+  console.log("total Price", totalPrice);
 }
 
 
@@ -127,7 +132,27 @@ getTotalQuantity(): void {
   },0);
   // on assigne la quantité total à la propriété productQuantity du basket service
   this.productQuantity = total;
+  console.log("total Quantity", this.productQuantity);
 }
 
+
+//Fonction pour supprimer un produit du panier
+removeProduct(index: number) {
+  // on recupere le panier
+const basket= this.getBasket();
+console.log("mon panier avant suppression", basket);
+
+//fonction angular sur un tableau pour pouvoir retirer un element avec son index et le nombre d'elements à retirer
+basket.splice(index,1);
+console.log("mon panier apres", basket);
+// je retransforme mon panier en chaine de caracteres
+//localStorage.setItem('basket', JSON.stringify(basket));
+//j'affiche ma nouvelle quantité
+this.getTotalQuantity();
+//j'affiche mon nouveau prix total
+this.getBasketTotalPrice();
+//j'enregistre mon panier
+this.saveBasket(basket);
+}
 
 }
