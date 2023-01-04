@@ -1,4 +1,4 @@
-type Category='skirts'|'pants'|'jackets'|'tshirts';
+export type Category='skirts'|'pants'|'jackets'|'tshirts';
 export interface Product{
     id:number;
     title:string;
@@ -12,21 +12,21 @@ export interface Product{
 export const PRODUCTS:Product[]=[
     {
         id:1,
-        title:"Pantalon Noir",
+        title:"Pantalon Rose",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:15,
         color:"noir",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-fushia1.png",
         isAvailable:true,
-        category:"pants"
+        category:"jackets"
     },
     {
         id:2,
-        title:"Pantalon rose",
+        title:"Pantalon noir",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
-        price:15,
+        price:17,
         color:"rose",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-Noir.png",
         isAvailable:true,
         category:"pants"
     },
@@ -34,9 +34,9 @@ export const PRODUCTS:Product[]=[
         id:3,
         title:"Pantalon cargo",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
-        price:15,
+        price:13,
         color:"kaki",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-Noir.png",
         isAvailable:true,
         category:"pants"
     },
@@ -44,9 +44,9 @@ export const PRODUCTS:Product[]=[
         id:4,
         title:"Pantalon palazzo",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
-        price:15,
+        price:31,
         color:"vert",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-Noir.png",
         isAvailable:true,
         category:"pants"
     },
@@ -54,9 +54,9 @@ export const PRODUCTS:Product[]=[
         id:5,
         title:"Pantalon jeans",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
-        price:15,
+        price:20,
         color:"jeans bleu",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-Noir.png",
         isAvailable:true,
         category:"pants"
     },
@@ -64,9 +64,9 @@ export const PRODUCTS:Product[]=[
         id:6,
         title:"Pantalon beige",
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
-        price:15,
+        price:18,
         color:"beige",
-        image:"asset/img/pants/pantalon-Noir",
+        image:"assets/Images/pants/pantalon-Noir.png",
         isAvailable:true,
         category:"pants"
     },

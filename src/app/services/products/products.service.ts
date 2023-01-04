@@ -13,6 +13,12 @@ export class ProductsService {
   }
   //retourne un produit par id
   getProduct(id:number): Product | undefined{
-    return PRODUCTS.find(product=>product.id ===id);
+    return PRODUCTS.find(product => product.id ===id);
   }
+  //retourne une categorie
+  getCategoryProduct(categoryA:string)
+  {
+    return PRODUCTS.filter(categoryProduct => categoryProduct.category === categoryA);
+  }
+
 }

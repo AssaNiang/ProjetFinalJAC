@@ -15,6 +15,7 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { BasketComponent } from './pages/basket/basket.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CategoryProductComponent } from './pages/category-product/category-product.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     BasketComponent,
     PaymentComponent,
     NotFoundComponent,
+    CategoryProductComponent,
 
   ],
   imports: [

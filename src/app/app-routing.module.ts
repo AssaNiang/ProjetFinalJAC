@@ -4,6 +4,7 @@ import { AllCategoriesComponent } from './pages/all-categories/all-categories.co
 import { BasketComponent } from './pages/basket/basket.component';
 import { CategoryJacketsComponent } from './pages/category-jackets/category-jackets.component';
 import { CategoryPantsComponent } from './pages/category-pants/category-pants.component';
+import { CategoryProductComponent } from './pages/category-product/category-product.component';
 import { CategorySkirtsComponent } from './pages/category-skirts/category-skirts.component';
 import { CategoryTshirtsComponent } from './pages/category-tshirts/category-tshirts.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,25 +25,14 @@ const routes: Routes = [
 },
 
 {
-  path:"category-jackets",
-  component: CategoryJacketsComponent
+  path:"category-products",
+  component: CategoryProductComponent
 },
-
 {
-  path:"category-pants",
-  component: CategoryPantsComponent
+  path:"category-product/:category",
+  component: CategoryProductComponent
 },
 
-
-{
-  path:"category-skirts",
-  component: CategorySkirtsComponent
-},
-
-{
-  path:"category-tshirts",
-  component: CategoryTshirtsComponent
-},
 
 {
   path:"product/:id",

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Product } from 'src/app/mocks/products.mock';
+import { Product, PRODUCTS } from 'src/app/mocks/products.mock';
 import { ProductsService } from '../products/products.service';
 
 
@@ -34,7 +34,7 @@ private createBasket() {
 }
 
 
-//Fonction qui transforme le panier en string et l'enregistre
+//Fonction qui transforme le panier en string et l'enregistre, ajout de prix total et de quantité totale
 private saveBasket(basket: BasketProduct[]) {
   localStorage.setItem('basket', JSON.stringify(basket));
   this.getBasketTotalPrice();
@@ -63,20 +63,40 @@ getBasket(){
 addToBasket(basketProduct : BasketProduct) {
   //recuperation du panier
   const basket = this.getBasket();
+  
   // on cherche dans le panier si le produit existe en comparant l'id du panier et id du mock
-  const productExists = basket.find((basketProduct: BasketProduct) => basketProduct.product.id === product.product.id); // attendre le mock d'Assa pour regler ce probleme
+  const productExists = basket.find((product: BasketProduct) => basketProduct.product.id === product.product.id); // attendre le mock d'Assa pour regler ce probleme
+  console.log('productExists', productExists);
+
+  // if(productExists) {
+  //   const productIndex = basket.indexOf(productExists);
+  //   basket[productIndex].quantity += basketProduct.quantity;
+  //   console.log('existe', basket);
+  // } else {
+  //   basket.push(basketProduct);
+  // } 
+
+  // this.saveBasket(basket);
+  
   //si le produit existe
-  if (productExists) {
-    // on recupere l'index du produit
-    const basketProductId = basket.indexOf(productExists);
-    // on incremente la quantité du produit dans la panier
-    basket[basketProductId].quantity += basketProductId.quantity;
+   if (productExists) {
+   // on recupere l'index du produit
+  //   console.log("product exist", productExists);
+    
+   const basketProductId = basket.indexOf(productExists);
+   // on incremente la quantité du produit dans le panier
+   basket[basketProductId].quantity += basketProduct.quantity;
+    console.log("quantité panier", basket[basketProductId].quantity);
+    console.log("quantité article ajouté", basketProduct.quantity);
+
   } else {
     // sinon on ajoute le produit dans le panier
     basket.push(basketProduct);
+    console.log("else");
+    
   }
   // on enregistre le panier en appelant la fonction saveBasket()
-  this.saveBasket(basket);
+ this.saveBasket(basket);
 }
 
 
