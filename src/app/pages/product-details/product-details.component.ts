@@ -18,7 +18,7 @@ constructor(
 ){}
 ngOnInit(){
   this.initProduct();
-  console.log('product',this.productP);
+  console.log('product',this.productP?.size);
 }
 initProduct(){
   const id =Number(this.activatedRoute.snapshot.paramMap.get('id'));
