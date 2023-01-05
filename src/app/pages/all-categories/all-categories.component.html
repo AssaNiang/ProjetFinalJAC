@@ -11,7 +11,7 @@
             <article *ngFor="let item of allCategoryArray">
                 <img src="{{ item.imageCategory }}">
                 <p>{{ item.descriptionCategory }} </p>
-                <button>{{ item.buttonCategory }} </button>
+                <a routerLink="{{ item.linkCategory }}" >{{ item.buttonCategory }} </a>
             </article>
         <!-- </li>
     </ul> -->

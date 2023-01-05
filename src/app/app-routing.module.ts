@@ -15,14 +15,10 @@ const routes: Routes = [
   component: HomeComponent
 },
 
-{
-  path:"all-categories",
-  component: AllCategoriesComponent
-},
 
 {
   path:"category-products",
-  component: CategoryProductsComponent
+  component: AllCategoriesComponent
 },
 {
   path:"category-products/:category",

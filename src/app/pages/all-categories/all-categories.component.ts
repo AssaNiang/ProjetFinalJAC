@@ -25,28 +25,28 @@ allCategoryArray: allCategoriesBloc [] = [
     imageCategory : "assets/Images/allcategories_tshirt.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "T-Shirts",
-    linkCategory: "/category-skirts"
+    linkCategory: "/category-products/tshirts"
   },
 
   {
     imageCategory : "assets/Images/allcategories_jackets.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Vestes",
-    linkCategory: "/category-skirts"
+    linkCategory: "/category-products/jackets"
   },
 
   {
     imageCategory : "assets/Images/allcategories_skirt.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Jupes",
-    linkCategory: "/category-skirts"
+    linkCategory: "/category-products/skirts"
   },
 
   {
     imageCategory : "assets/Images/allcategories_pants.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Pantalons",
-    linkCategory: "/category-skirts"
+    linkCategory: "/category-products/pants"
   }
 
 ]

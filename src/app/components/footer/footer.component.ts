@@ -34,7 +34,7 @@ export class FooterComponent {
 
     {
       footerLinkName: "Catégories",
-      footerLinkPage: "/all-categories"
+      footerLinkPage: "/category-products"
     },
 
     {
