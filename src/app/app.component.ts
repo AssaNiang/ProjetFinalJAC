@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BasketService } from './services/basket/basket.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjetFinalJAC';
+
+  constructor(private basketService: BasketService) {};
+
+  ngOnInit() {
+    this.basketService.getBasket();
+    this.basketService.getBasketTotalPrice();
+    this.basketService.getTotalQuantity();
+  }
 }

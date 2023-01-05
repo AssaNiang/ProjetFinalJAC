@@ -1,0 +1,15 @@
+<main>
+    <ul>
+        <li *ngFor="let item of category">
+            <article>
+                <img src="{{ item.image[0] }}" alt="{{item.title}}">
+                <div class="description flex">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.price}}</p>
+                    <!-- <a routerLink="/product/{{item.id}}">Découvrir le produit</a> -->
+                    <button routerLink="/product/{{item.id}}">Découvrir le produit</button>
+                </div>
+            </article>
+        </li>
+    </ul>
+</main>
