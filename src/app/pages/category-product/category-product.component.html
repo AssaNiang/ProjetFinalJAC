@@ -1,0 +1,13 @@
+<p>category-product works!</p>
+<main>
+    <ul>
+        <li *ngFor="let item of category">
+            <article>
+                <h3>{{item.title}}</h3>
+                <p>{{item.price}}</p>
+                <img src="{{ item.image }}" alt="{{item.title}}">
+                <a routerLink="/product/{{item.id}}">Découvrir le produit</a>
+            </article>
+        </li>
+    </ul>
+</main>

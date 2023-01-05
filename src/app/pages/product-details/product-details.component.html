@@ -1,1 +1,7 @@
-<p>product-details works!</p>
+
+<main *ngIf="productP">
+    <h2>{{productP.title}}- {{productP.price}}€</h2>
+    <img src="{{ productP.image }}" alt="{{productP.title}}">
+    <p>{{productP.description}}</p>
+    <button (click)="addToBasket()">Ajouter au panier</button>
+</main>

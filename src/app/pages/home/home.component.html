@@ -1,1 +1,30 @@
 <p>home works!</p>
+
+<img src="assets/Images/home_banner.png">
+<!-- créer un component "banner" pour les pages qui ont une bannière ? -->
+
+<article *ngFor="let item of homeArray">
+
+    <div class="flexboxBig">
+
+        <img src="{{ item.imageHome }}" class="imgBloc">
+
+        <div class="flexboxSmall">
+            <h2> {{ item.titleHome }}</h2>
+            <p>{{ item.descriptionHome }} </p>
+            <button><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></button>
+        </div>
+
+    </div>
+
+
+</article>
+
+<h2>Best-sellers par catégories</h2>
+
+<!-- Inserer CARROUSEL le jour où je saurai en faire un correctement -->
+<p>placeholder</p>
+
+
+<h2>Notre actualité</h2>
+
