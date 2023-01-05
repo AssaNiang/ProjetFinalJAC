@@ -1,0 +1,41 @@
+footer{
+    background-color: #7461CC;;
+}
+
+footer h3, footer p, footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #f5c24d;
+    font-weight: bold;
+}
+
+.topFooter, .bottomFooter, .rsFooter{
+    display: flex;
+}
+
+.topFooter, .bottomFooter{
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+
+
+.bottomFooter{
+    align-items: center;
+}
+
+.logoFooter img, .paymentFooter img{
+    width: 25%;
+    height: 25%;
+}
+
+.rsFooter img{
+    width: 75%;
+    height: 75%;
+}
+
+.copyrightFooter{
+    text-align: center;
+}

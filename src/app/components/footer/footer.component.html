@@ -1,1 +1,100 @@
 <p>footer works!</p>
+
+
+
+<footer>
+    <div class="footer-desktop flex column">
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- 1ere partie du footer -->
+
+
+<!-- NEWSLETTER -->
+
+        <div class="topFooter">
+
+            <div class="nsFooter">
+
+                <h3>Newsletter</h3>
+
+                <p>Rejoignez notre communauté</p>
+                <form>
+                    <input type="text" placeholder="Entrez votre email">
+                    <input class="violet" type="submit" value="OK">
+                </form>
+
+            </div>
+
+<!-- MENU -->
+
+            <div class="menuFooter">
+
+                <h3>Menu</h3>
+
+                    <article *ngFor="let item of footerLinkMenuArray">
+                       
+                        <a routerLink="{{ item.footerLinkPage }}"> {{ item.footerLinkName }} </a>
+
+                    </article>
+
+
+            </div>
+
+
+<!-- LEGAL -->
+
+            <div class="legalFooter">
+
+             <h3>Légal</h3>
+
+                    <article *ngFor="let item of footerLinkLegalArray">
+                       
+                        <a routerLink="{{ item.footerLinkPage }}"> {{ item.footerLinkName }} </a>
+
+                    </article>
+
+            </div>
+
+        </div>
+
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- 2eme partie du footer -->
+
+
+        <div class="bottomFooter">
+
+            <div class="rsFooter">
+
+                <article *ngFor="let item of footerRSArray">
+
+                    <a routerLink="{{ item.footerLinkRS }}"> <img src="{{ item.footerLogoRS }}" alt="{{ item.footerAltRS }}"> </a>
+
+                </article>
+
+            </div>
+
+
+            <div class="logoFooter">
+
+                <a routerLink="/">
+                    <img src="assets\Images\logo\JAC_logo-transparent-white-border.png" alt="logo JAC">
+                </a>
+    
+            </div>
+
+
+            <div class="paymentFooter">
+
+                <img src="assets/Images/icons/icon_Footer-payment.png" alt="cartes de paiment acceptées">
+
+            </div>
+
+        </div>
+
+        <p class="copyrightFooter">Copyright 2022</p>
+
+    </div>
+  
+
+</footer>
