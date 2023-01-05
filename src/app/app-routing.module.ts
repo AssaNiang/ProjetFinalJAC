@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
 import { BasketComponent } from './pages/basket/basket.component';
-import { CategoryProductComponent } from './pages/category-product/category-product.component';
+import { CategoryProductsComponent } from './pages/category-products/category-products.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PaymentComponent } from './pages/payment/payment.component';
@@ -22,11 +22,11 @@ const routes: Routes = [
 
 {
   path:"category-products",
-  component: CategoryProductComponent
+  component: CategoryProductsComponent
 },
 {
-  path:"category-product/:category",
-  component: CategoryProductComponent
+  path:"category-products/:category",
+  component: CategoryProductsComponent
 },
 
 

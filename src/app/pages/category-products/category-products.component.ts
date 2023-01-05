@@ -5,11 +5,11 @@ import { ProductsService } from 'src/app/services/products/products.service';
 
 
 @Component({
-  selector: 'app-category-product',
-  templateUrl: './category-product.component.html',
-  styleUrls: ['./category-product.component.css']
+  selector: 'app-category-products',
+  templateUrl: './category-products.component.html',
+  styleUrls: ['./category-products.component.css']
 })
-export class CategoryProductComponent {
+export class CategoryProductsComponent {
   category?:Product[]=[];
   constructor(
     private productService:ProductsService,
