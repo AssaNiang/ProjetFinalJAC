@@ -1,7 +1,12 @@
 
 <main *ngIf="productP">
     <h2>{{productP.title}}- {{productP.price}}€</h2>
-    <img src="{{ productP.image }}" alt="{{productP.title}}">
+    <img src="{{ productP.image[0] }}" alt="{{productP.title}}">
     <p>{{productP.description}}</p>
+    <ul >
+        <li *ngFor="let item of productP.size">
+            {{item}}
+        </li>
+    </ul> 
     <button (click)="addToBasket()">Ajouter au panier</button>
 </main>
