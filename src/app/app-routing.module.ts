@@ -21,7 +21,7 @@ const routes: Routes = [
 },
 
 {
-  path:"category-product",
+  path:"category-products",
   component: CategoryProductComponent
 },
 {
