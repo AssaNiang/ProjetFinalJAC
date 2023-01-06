@@ -1,0 +1,114 @@
+<!-- Propriété déclarée dans le ts -->
+
+<form>
+
+
+    <!-- Coordonnées -->
+
+    <form [formGroup]="coordonneesForm" class="coordonnees">
+
+        <h3> Coordonnées</h3>
+
+        <div>
+            <label for="user_name">Nom</label>
+            <input [class.hasError]="validationCoordonneesError.includes('user_name')" [class.isOk]="validationCoordonneesError.includes('user_name')" type="text" id="user_name" formControlName="user_name">
+        </div>
+
+        <div>
+            <label for="user_firstName">Prénom</label>
+            <input [class.hasError]="validationCoordonneesError.includes('user_firstName')" type="text" id="user_firstName" formControlName="user_firstName">
+        </div>
+
+        <div>
+            <label for="user_email">Email</label>
+            <input [class.hasError]="validationCoordonneesError.includes('user_email')" type="text" id="user_email" formControlName="user_email">
+        </div>
+
+        <div>
+            <label for="user_phone">Numéro de téléphone</label>
+            <input [class.hasError]="validationCoordonneesError.includes('user_phone')" type="text" id="user_phone" formControlName="user_phone">
+        </div>
+
+        <div>
+            <button type="submit" (click)="registerCoordonnees()">Enregistrer et continuer</button>
+        </div>
+
+    </form>
+
+
+    <!-- Livraison -->
+
+    <form [formGroup]="billingForm" class="billing">
+
+        <h3> Livraison</h3>
+
+        <div>
+            <label for="billing_name">Nom</label>
+            <input [class.hasError]="validationBillingError.includes('billing_name')" type="text" id="billing_name" formControlName="billing_name">
+        </div>
+
+        <div>
+            <label for="billing_firstName">Prénom</label>
+            <input [class.hasError]="validationBillingError.includes('billing_firstName')" type="text" id="billing_firstName" formControlName="billing_firstName">
+        </div>
+
+        <div>
+            <label for="billing_adress">Adresse</label>
+            <input [class.hasError]="validationBillingError.includes('billing_adress')" type="text" id="billing_adress" formControlName="billing_adress">
+        </div>
+
+        <div>
+            <label for="billing_complements">Compléments d'adresse</label>
+            <input [class.hasError]="validationBillingError.includes('billing_complements')" type="text" id="billing_complements" formControlName="billing_complements">
+        </div>
+
+        <div>
+            <label for="billing_postalCode">Code postal</label>
+            <input [class.hasError]="validationBillingError.includes('billing_postalCode')" type="text" id="billing_postalCode" formControlName="billing_postalCode">
+        </div>
+
+        <div>
+            <label for="billing_city">Ville</label>
+            <input [class.hasError]="validationBillingError.includes('billing_city')" type="text" id="billing_city" formControlName="billing_city">
+        </div>
+
+        <div>
+            <button type="submit" (click)="registerBilling()">Enregistrer et continuer</button>
+        </div>
+
+    </form>
+
+    <!-- Informations bancaires -->
+
+    <form [formGroup]="paymentForm" class="bank">
+
+        <h3> Coordonnées bancaires</h3>
+
+        <div>
+            <label for="card_username">Nom prénom</label>
+            <input [class.hasError]="validationPaymentError.includes('card_username')" type="text" id="card_username" formControlName="card_username">
+        </div>
+
+        <div>
+            <label for="card_number">Numéro de carte</label>
+            <input [class.hasError]="validationPaymentError.includes('card_number')" type="text" id="card_number" formControlName="card_number">
+        </div>
+
+        <div>
+            <label for="card_expiration">Date d'expiration</label>
+            <input [class.hasError]="validationPaymentError.includes('card_expiration')" type="text" id="card_expiration" formControlName="card_expiration">
+        </div>
+
+        <div>
+            <label for="card_cvc">Code CVC</label>
+            <input [class.hasError]="validationPaymentError.includes('card_cvc')" type="text" id="card_cvc" formControlName="card_cvc">
+        </div>
+
+        <div>
+            <button type="submit" (click)="pay()">Payer</button>
+        </div>
+
+    </form>
+
+
+</form>

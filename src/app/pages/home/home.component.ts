@@ -22,7 +22,7 @@ export class HomeComponent {
       titleHome: "Bienvenue sur notre e-shop",
       descriptionHome : "Ouverture officielle de notre boutique en ligne",
       buttonHome: "Je découvre",
-      linkHome: "/all-categories"
+      linkHome: "/category-products"
     },
   
     {
