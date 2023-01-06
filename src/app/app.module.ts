@@ -12,6 +12,7 @@ import { BasketComponent } from './pages/basket/basket.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CategoryProductsComponent } from './pages/category-products/category-products.component';
+import { VisitedProductComponent } from './components/visited-product/visited-product.component';
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -28,7 +29,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     PaymentComponent,
     NotFoundComponent,
     CategoryProductsComponent,
+
+    VisitedProductComponent
+
     PaymentFormComponent,
+
 
   ],
   imports: [

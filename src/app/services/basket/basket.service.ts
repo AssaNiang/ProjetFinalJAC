@@ -68,7 +68,6 @@ addToBasket(basketProduct : BasketProduct) {
   
   // on cherche dans le panier si le produit existe en comparant l'id du panier et id du mock
   const productExists = basket.find((product: BasketProduct) => basketProduct.product.id === product.product.id); // attendre le mock d'Assa pour regler ce probleme
-  console.log('productExists', productExists);
 
   // if(productExists) {
   //   const productIndex = basket.indexOf(productExists);
@@ -94,7 +93,6 @@ addToBasket(basketProduct : BasketProduct) {
   } else {
     // sinon on ajoute le produit dans le panier
     basket.push(basketProduct);
-    console.log("else");
     
   }
   // on enregistre le panier en appelant la fonction saveBasket()
@@ -118,7 +116,6 @@ getBasketTotalPrice(): void {
   },0);
   // on donne la valeur du total du panier à la propriété basketTotal du basket Service
   this.basketTotalPrice = totalPrice;
-  console.log("total Price", totalPrice);
 }
 
 
@@ -132,7 +129,6 @@ getTotalQuantity(): void {
   },0);
   // on assigne la quantité total à la propriété productQuantity du basket service
   this.productQuantity = total;
-  console.log("total Quantity", this.productQuantity);
 }
 
 
@@ -140,11 +136,9 @@ getTotalQuantity(): void {
 removeProduct(index: number) {
   // on recupere le panier
 const basket= this.getBasket();
-console.log("mon panier avant suppression", basket);
 
 //fonction angular sur un tableau pour pouvoir retirer un element avec son index et le nombre d'elements à retirer
 basket.splice(index,1);
-console.log("mon panier apres", basket);
 // je retransforme mon panier en chaine de caracteres
 //localStorage.setItem('basket', JSON.stringify(basket));
 //j'affiche ma nouvelle quantité

@@ -17,7 +17,6 @@ export class CategoryProductsComponent {
     ){}
     ngOnInit(){
       this.initCategory();
-      console.log('product',this.category);
     }
     initCategory(){
       const category =this.activatedRoute.snapshot.paramMap.get('category');
