@@ -12,6 +12,8 @@ import { BasketComponent } from './pages/basket/basket.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CategoryProductsComponent } from './pages/category-products/category-products.component';
+import { PaymentFormComponent } from './components/payment-form/payment-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,11 +28,13 @@ import { CategoryProductsComponent } from './pages/category-products/category-pr
     PaymentComponent,
     NotFoundComponent,
     CategoryProductsComponent,
+    PaymentFormComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

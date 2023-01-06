@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: 30px 150px 50px;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.coordonnees, .billing, .bank {
+    border: black solid 2px;
+    padding: 25px;
+}
+input{
+    width: 250px;
+}
+button {
+    width: 250px
+}
+.hasError {
+    border : red solid 1px;
+}
