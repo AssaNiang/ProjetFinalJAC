@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/mocks/products.mock';
 import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 import { ProductsService } from 'src/app/services/products/products.service';
+import { VisitedProductsService } from 'src/app/services/visited-products/visited-products.service';
 
 @Component({
   selector: 'app-product-details',
@@ -17,13 +18,21 @@ constructor(
   private productService:ProductsService,
   private activatedRoute:ActivatedRoute,
   private router:Router,
-  private basketService: BasketService
+  private basketService: BasketService,
+  private visitedProducts:VisitedProductsService,
 ){}
 
 
 ngOnInit(){
   this.initProduct();
-  console.log('product',this.productP?.size);
+}
+
+ngOnDestroy() {
+  console.log('DESTROY');
+  if(this.productP){
+    this.visitedProducts.addProductToHistory(this.productP);
+  }
+  
 }
 
 
@@ -32,7 +41,8 @@ initProduct(){
   const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
   const foundProduct=this.productService.getProduct(id);
   if(foundProduct){
-    this.productP=foundProduct;
+    this.productP=foundProduct;    
+    
   }else{
     this.router.navigate(['/not-found']);
   }
@@ -42,7 +52,6 @@ initProduct(){
 addToBasket() {
   //si le produit existe  je ne fais rien
   if(!this.productP) return;
-  console.log(this.productP);
   //je cree mon basketProduct avec mise a jour de l'objet product et de la quantité
   const basketProduct: BasketProduct = {
     product: this.productP,
@@ -50,7 +59,6 @@ addToBasket() {
 
   }
   this.basketService.addToBasket(basketProduct);
-  console.log(basketProduct);
 }
 
 }
