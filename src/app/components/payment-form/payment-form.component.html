@@ -11,7 +11,7 @@
 
         <div>
             <label for="user_name">Nom</label>
-            <input [class.hasError]="validationCoordonneesError.includes('user_name')" type="text" id="user_name" formControlName="user_name">
+            <input [class.hasError]="validationCoordonneesError.includes('user_name')" [class.isOk]="validationCoordonneesError.includes('user_name')" type="text" id="user_name" formControlName="user_name">
         </div>
 
         <div>
@@ -96,12 +96,12 @@
 
         <div>
             <label for="card_expiration">Date d'expiration</label>
-            <input type="text" id="card_expiration" formControlName="card_expiration">
+            <input [class.hasError]="validationPaymentError.includes('card_expiration')" type="text" id="card_expiration" formControlName="card_expiration">
         </div>
 
         <div>
             <label for="card_cvc">Code CVC</label>
-            <input type="text" id="card_cvc" formControlName="card_cvc">
+            <input [class.hasError]="validationPaymentError.includes('card_cvc')" type="text" id="card_cvc" formControlName="card_cvc">
         </div>
 
         <div>
