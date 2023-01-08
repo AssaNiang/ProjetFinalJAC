@@ -8,6 +8,11 @@ interface homeBloc {
   linkHome?: string;
 }
 
+interface homeCarrousel {
+  imageCarrousel : string;
+  altCarrousel: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -31,6 +36,32 @@ export class HomeComponent {
       descriptionHome : "Une couleur coup de coeur ? Nos pièces incontournables se déclinent quelques soient vos préférences."
     }
   ]  
+
+homeCarrouselArray: homeCarrousel [] = [
+
+  {
+    imageCarrousel : "assets/Images/home_placeholder-bestseller-tshirt.jpg",
+    altCarrousel: "best-seller Tshirt"
+  },
+
+  {
+    imageCarrousel : "assets/Images/home_placeholder-bestseller-jacket.jpg",
+    altCarrousel: "best-seller Veste"
+  },
+
+  {
+    imageCarrousel : "assets/Images/home_placeholder-bestseller-skirt.jpg",
+    altCarrousel: "best-seller Jupe"
+  },
+
+  {
+    imageCarrousel : "assets/Images/home_placeholder-bestseller-pants.PNG",
+    altCarrousel: "best-seller Pantalon"
+  }
+
+]
+
+  
 
 
 }
