@@ -1,8 +1,8 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    margin: 30px 150px 50px;
+    width: 25vw;
+    margin: 0 80px 50px; 
     justify-content: center;
     align-items: center;
 }
@@ -15,6 +15,7 @@ div {
     border: black solid 2px;
     padding: 25px;
 }
+
 input{
     width: 250px;
 }
