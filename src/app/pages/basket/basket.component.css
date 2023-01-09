@@ -1,121 +1,103 @@
-/* GENERALITEs */
+/* GENERALITES */ 
 
-main {
-    background-color: lightgrey;
-}
-
-ul li {
-    list-style: none;
+main{
+    width: 60vw;
+    margin: 0 auto;
 }
 
-.flex {
-    display:flex;
-}
-#panier-livraison{
-    gap: 40px;
-    border:#7461CC solid 2px;
-}
-#panier-livraison a{
-    text-decoration-color: #7461CC;
-}
-
-/*BLOC PANIER */
-
-#panier-livraison, #promo-total{
-    min-height: 100px;
-    margin: 50px auto;
-    padding: 50px;
-}
-#panier-livraison h2{
-    margin-bottom: 70px;
-}
-#bloc-panier {
-    border-right: #7461CC solid 1px;
-}
-
-#bloc-panier .image-article{
-    border: #7461CC solid 2px;
-    margin-right: 40px;
-}  
-.bloc-description-prix {
-    justify-content: space-between;
-    width: 50%;
-}
 /*  BLOC LIVRAISON */
 
-.sous-bloc-livraison{
-    flex-direction :column;
-    justify-content:space-between;
-    height: 80%;
+.modalites{
+    margin-left: 100px;
 }
-.sous-bloc-livraison .modalites{
-    flex-direction: column;
-    
-}
-.modalites .checkbox-livraison{
+.modalites #checkbox-livraison {
     margin-right: 10px;
     width: 1.3em;
     height: 1.3em;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
-    border: 3px solid var(--color-black);
+    border: 3px solid black;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
-}   
-.checkbox-livraison:checked{
-        background-color: #7461CC;
-}
-.commander-shopper{
-    flex-direction: column;
-}
-.bouton-commander{
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10%;
-    cursor: pointer;
-    background-color: #7461CC;
-}
-.bouton-commander:hover{
-    background-color: #32C4F6;
 }
 
-/*CODE PROMO */
-#promo-total{
-    margin-top:150px;
+#checkbox-livraison:checked {
+    background-color: #7461CC;
 }
-#promo-total hr{
+
+
+
+/*CODE PROMO */
+#promo-total {
+    margin-top: 50px;
+}
+
+#promo-total hr {
     margin: 80px 0;
     border: #7461CC solid 1px;
 }
-#promo-total h3{
+
+#promo-total h3 {
     margin-bottom: 50px;
 }
-#promo-total form{
+
+#promo-total form {
     gap: 30px;
 }
-#promo-total form input{
-    padding:8px;
+
+#promo-total form input {
+    padding: 8px;
     border: black solid 2px;
     background-color: var(--color-white);
     font-size: 18px;
     color: black;
 }
-#promo-total form button{
-    padding:15px 30px;
+
+
+
+
+/* bouton appliquer */
+#promo-total form button {
+    padding: 15px 30px;
     color: black;
-    border-radius: 10%;
+    border-radius: 5px;
     border: none;
     background-color: #7461CC;
 }
-#promo-total form button:hover{
-color: black;
-background-color: #32C4F6;
+
+
+#promo-total form button:hover {
+    color: black;
+    background-color: #32C4F6;
 }
-#montant-panier table tbody tr td{
+
+#montant-panier table tbody tr td {
     padding: 10px 180px 10px 0;
     text-align: right;
+}
+
+
+/* BOUTON COMMANDER ET CONTINUER A SHOPPER */
+
+.commander-shopper {
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* bouton commander */ 
+.bouton-commander {
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7461CC;
+    margin: 10px 100px 80px 0;
+}
+
+.bouton-commander:hover {
+    background-color: #32C4F6;
 }
