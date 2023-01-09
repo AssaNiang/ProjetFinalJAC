@@ -1,0 +1,38 @@
+<main>
+
+    <div id="panier" >
+
+        <h2>MON PANIER</h2>
+
+        <ul class="flex column">
+            <li *ngFor="let basketProduct of basket; let index = index">
+                <article class="flex">
+                    <img src="{{basketProduct.product.image }}" alt="{{ basketProduct.product.title}}" width="150px">
+                   
+                    <!-- Partie nom de l'article - prix et description -->
+                    <div class="description-article flex column">
+                        <h3>
+                            {{ basketProduct.product.title}} - {{ basketProduct.product.price}}€
+                        </h3>
+                        <p>{{ basketProduct.product.description}}</p>
+                        
+                    </div>
+
+
+                    <!-- partie prix et bouton supprimer -->
+                    <div class="prix flex column">
+                        <p> compteur</p>
+                        <p>prix quantite total</p>
+                        <button class="suppression" (click)="removeProduct(index)">Supprimer cet article</button>
+                    </div>
+
+                </article>
+                <br>
+            </li>
+        </ul>
+    </div>
+
+
+    
+
+</main>

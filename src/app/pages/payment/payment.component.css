@@ -1,0 +1,10 @@
+/*  mise en forme des blocs formulaires et panier*/
+
+.flex {
+display: flex;
+justify-content: center;
+}
+app-cart{
+    width: 50vw;
+}
+

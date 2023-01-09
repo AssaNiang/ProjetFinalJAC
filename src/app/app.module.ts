@@ -15,6 +15,7 @@ import { CategoryProductsComponent } from './pages/category-products/category-pr
 import { VisitedProductComponent } from './components/visited-product/visited-product.component';
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     VisitedProductComponent,
 
     PaymentFormComponent,
+     CartComponent,
 
 
   ],

@@ -1,0 +1,41 @@
+/* GENERALITEs */
+
+
+
+ul li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+h2 {
+    margin-bottom: 50px;
+}
+
+/*BLOC PANIER */
+
+
+#panier article {
+    width:50vw;
+    justify-content:space-around;
+    margin-bottom: 50px;
+    /* border: #7461CC solid 1px; */
+}
+
+.description-article{
+    justify-content: end;
+    align-self: end;
+}
+
+/* partie prix et bouton supprimer */
+.prix{
+    justify-content:space-around;
+    align-items: end;
+    width: 180px;
+} 
+
