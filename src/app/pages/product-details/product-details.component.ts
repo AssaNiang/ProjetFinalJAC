@@ -26,7 +26,7 @@ constructor(
 ngOnInit(){
   this.initProduct();
 }
-
+// les produits se mettent dans l'historique une fois que l'on quitte la page 
 ngOnDestroy() {
   console.log('DESTROY');
   if(this.productP){

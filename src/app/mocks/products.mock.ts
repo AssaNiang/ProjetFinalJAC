@@ -6,6 +6,7 @@ export interface Product{
     description:string;
     price:number;
     color:string;
+    wishlist:string;
     image:string[];
     isAvailable:boolean;
     size:Size[];
@@ -18,10 +19,11 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:15,
         color:"Fushia",
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
         image:["assets/Images/pants/pantalon-fushia1.png"],
         isAvailable:true,
         size:['S','M'],
-        category:"jackets"
+        category:"pants"
     },
     {
         id:2,
@@ -29,7 +31,9 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:17,
         color:"Noir",
-        image:["assets/Images/pants/pantalon-Noir.png"],
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
+
+        image:["assets/Images/pants/product_pantalon-noir1.png"],
         isAvailable:true,
         size:['S','M'],
         category:"pants"
@@ -40,6 +44,8 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:13,
         color:"kaki",
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
+
         image:["assets/Images/pants/product_pantalon-treilli3.png"],
         isAvailable:true,
         size:['S','M'],
@@ -51,6 +57,8 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:31,
         color:"vert",
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
+
         image:["assets/Images/pants/product_pantalon-vert1.png"],
         isAvailable:true,
         size:['S','M'],
@@ -62,6 +70,8 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:20,
         color:"jeans bleu",
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
+
         image:["assets/Images/pants/product_pantalon-jean2.png"],
         isAvailable:true,
         size:['S','M'],
@@ -73,6 +83,8 @@ export const PRODUCTS:Product[]=[
         description:"Large s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stand ",
         price:18,
         color:"Rose",
+        wishlist:"assets/Images/icons/icon_Header-heart.png",
+
         image:["assets/Images/pants/product_pantalon-rose3.png"],
         isAvailable:true,
         size:['S','M'],
