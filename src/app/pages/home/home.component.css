@@ -20,21 +20,41 @@ h2{
     height: 600px;
 }
 
-button{
+.linkShop{
     background-color: #7461CC;
     padding: 10px;
     border: none;
     border-radius: 10px;
 }
 
-button:hover{
+.linkShop:hover{
     background-color: #32C4F6;
     transform: scale(1.1);
     transition-duration: 500ms;
     cursor: pointer;
 }
 
-button a{
+.linkShop a{
     color: white;
     text-decoration: none;
+    text-align: center;
 }
+
+
+.carrousel {
+    display: flex;
+    justify-content: space-around;
+    border: solid 2px red;
+    
+}
+
+.carrousel img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.video{
+    text-align: center;
+}
+

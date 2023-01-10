@@ -10,7 +10,7 @@
         <div class="flexboxSmall">
             <h2> {{ item.titleHome }}</h2>
             <p>{{ item.descriptionHome }} </p>
-            <button><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></button>
+            <p class=linkShop><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></p>
         </div>
 
     </div>
@@ -21,8 +21,28 @@
 <h2>Best-sellers par catégories</h2>
 
 <!-- Inserer CARROUSEL le jour où je saurai en faire un correctement -->
-<p>placeholder</p>
+
+
+
+
+
+<article class=carrouselContent >
+
+    <div class="carrousel">
+
+        <img *ngFor="let item of homeCarrouselArray" src="{{ item.imageCarrousel }}" alt="{{ item.altCarrousel }}">
+
+    </div>
+
+</article>
+
+
 
 
 <h2>Notre actualité</h2>
 
+<div class="video">
+
+    <iframe class="actualite-video" width="810" height="506" src="https://www.youtube.com/embed/ycdrrUcpD8c?list=PLQA8WTjEMjzuFaLGekp-E0z5a9w5K6vUi" title="Infraction - Fashion Music /Background Music (Royalty Free Music) (No Copyright music) / Go Girl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
