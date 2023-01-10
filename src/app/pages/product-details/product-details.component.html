@@ -1,14 +1,34 @@
 
-<main *ngIf="productP">
-    <h2>{{productP.title}}- {{productP.price}}€</h2>
-    <img src="{{ productP.image[0] }}" alt="{{productP.title}}">
-    <p>{{productP.description}}</p>
-    <ul >
-        <li *ngFor="let item of productP.size">
-            {{item}}
-        </li>
-    </ul> 
-    <button (click)="addToBasket()">Ajouter au panier</button>
-    <a routerLink="/category-products">Continuez à shopper</a>
-</main>
+<section *ngIf="productP">
+    <div class="containerGlobal">
+        <div class="containerImages">
+            <div class="imgMiniature">
+                <img class="minature"src="{{productP.imageMini1}}" alt="{{productP.title}}">
+                <img class="minature" src="{{productP.imageMini1}}" alt="{{productP.title}}">
+                <img class="minature" src="{{productP.imageMini3}}" alt="{{productP.title}}">
+            </div>
+            <img src="{{ productP.image[0] }}" alt="{{productP.title}}">
+            <img class="wishlist" src="{{productP.wishlist}}"alt="favoris">
+        </div>
+        <div class="description">
+            <h2>{{productP.title}}</h2>
+            <p>{{productP.color}}-{{productP.price}}€</p>
+            <hr>
+            <p>Taille</p>
+            <ul class="modelSize">
+                <li *ngFor="let item of productP.size">
+                    {{item}}
+                </li>
+            </ul> 
+            <p>{{productP.description}}</p> 
+            <div class="event">
+                <button (click)="addToBasket()">Ajouter au panier</button>
+                <a routerLink="/category-products">Continuez à shopper</a>
+            </div>
+            
+        </div>
+    </div>
+       
+    
+</section>
 <app-visited-product></app-visited-product>
