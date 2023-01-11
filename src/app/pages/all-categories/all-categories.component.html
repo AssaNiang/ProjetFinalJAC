@@ -7,9 +7,21 @@
     <!-- <ul>
         <li > -->
             <article *ngFor="let item of allCategoryArray">
-                <img src="{{ item.imageCategory }}">
-                <p>{{ item.descriptionCategory }} </p>
-                <a routerLink="{{ item.linkCategory }}" >{{ item.buttonCategory }} </a>
+                <!-- tester un ngIf pour isoler les id 2 et 4 pour row-reverse ?-->
+
+                    <div class="flexboxBig" >
+
+                        <!-- [class.flexboxReverse]="{{ item.idCategory === '2' && '4'}}"  test d'une classe pour isoler les id 2 et 4 ? ne marche pas-->
+
+                    <img src="{{ item.imageCategory }}">
+
+                    <div class="flexboxSmall">
+                        <p>{{ item.descriptionCategory }} </p>
+                        <a routerLink="{{ item.linkCategory }}" >{{ item.buttonCategory }} </a>
+                    </div>
+
+                </div>
+
             </article>
         <!-- </li>
     </ul> -->
