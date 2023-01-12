@@ -27,6 +27,7 @@ section{
     
 }
 .containerGlobal{
+    /* width: min(1500px, 100%); */
     display:flex;
     gap:20px;
 }
@@ -70,10 +71,10 @@ section>div{
     display:flex;
 }
 .imgMiniature{
-margin-right: 20px;
-display:flex;
-flex-direction: column;
-gap:10px;
+    margin-right: 20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 }
 .containerImages{
     display:flex;
@@ -87,4 +88,88 @@ button{
     font-weight: 700;
     font-size: 15px;
     
+}
+/* je veux entre 1150px et 1380px les minatures soient en bas de l'image principale*/
+@media (min-width:1150px) and (max-width:1380px)  {
+    .containerImages{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top:0px;
+    }
+    .imgMiniature{
+        flex-direction: row;
+        justify-content: center;
+    }
+    img{
+        width:450px;
+        height:400px;
+    }
+    .wishlist{
+        top:51px;
+        right:90px;
+    }
+}
+/* je veux de 681px à 1149px le boc description se retrouve en dessous de l'image et des ses miniature */
+@media (min-width:682px) and (max-width:1149px) {
+    .containerImages{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+        width: 100%;
+    }
+    .imgMiniature{
+        flex-direction: row;
+        justify-content: center;
+    }
+    img{
+        width:450px;
+        height:400px;
+    }
+    .wishlist{
+        top:51px;
+        right:90px;
+    }
+    section{
+        height:105vh;
+    }
+    .containerGlobal{
+        flex-direction: column;
+    }
+  .description{
+    padding: 20px 20px;
+    width:100%;
+  }
+}
+@media (max-width:681px){
+    section{
+        height:120vh;
+    }
+    .containerImages{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:0px;
+        width: 100%;
+    }
+    .imgMiniature{
+        flex-direction: row;
+        justify-content: center;
+    }
+    img{
+        width:450px;
+        height:400px;
+    }
+    .wishlist{
+        top:51px;
+        right:90px;
+    }
+  
+    .containerGlobal{
+        flex-direction: column;
+    }
+  .description{
+    padding: 20px 20px;
+    width:100%;
+  }
 }

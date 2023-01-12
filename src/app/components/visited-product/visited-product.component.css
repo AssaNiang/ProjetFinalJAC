@@ -45,10 +45,11 @@ h3 {
 }
 
 .description {
-    margin-left: 10px;
+    margin: 10px;
     display: flex;
     gap: 10px;
     flex-direction: column;
+    align-items: center;
     position: relative;
     
 }
