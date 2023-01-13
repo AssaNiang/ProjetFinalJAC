@@ -30,8 +30,13 @@ h1, p{
     margin: 10%;
 
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
+}
+
+.flexboxReverse{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .flexboxSmall a{

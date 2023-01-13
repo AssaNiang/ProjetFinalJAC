@@ -4,24 +4,20 @@
 
 <!-- Boucle des objets blocs -->
 
-    <!-- <ul>
-        <li > -->
-            <article *ngFor="let item of allCategoryArray">
-                <!-- tester un ngIf pour isoler les id 2 et 4 pour row-reverse ?-->
 
-                    <div class="flexboxBig" >
+<article  *ngFor="let item of allCategoryArray" >
 
-                        <!-- [class.flexboxReverse]="{{ item.idCategory === '2' && '4'}}"  test d'une classe pour isoler les id 2 et 4 ? ne marche pas-->
+    <!-- condition: isoler les id pair pour les inverser (flexbox en row-reverse) -->
 
-                    <img src="{{ item.imageCategory }}">
+    <div class="flexboxBig" [class.flexboxReverse]="item.idCategory % 2 === 0">
 
-                    <div class="flexboxSmall">
-                        <p>{{ item.descriptionCategory }} </p>
-                        <a routerLink="{{ item.linkCategory }}" >{{ item.buttonCategory }} </a>
-                    </div>
+        <img src="{{ item.imageCategory }}">
 
-                </div>
+        <div class="flexboxSmall">
+            <p>{{ item.descriptionCategory }} </p>
+            <a routerLink="{{ item.linkCategory }}">{{ item.buttonCategory }} </a>
+        </div>
 
-            </article>
-        <!-- </li>
-    </ul> -->
+    </div>
+
+</article>
