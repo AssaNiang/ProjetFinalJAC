@@ -1,9 +1,17 @@
-<p>Produits recemment consultés!</p>
-<ul>
-    <li *ngFor="let historyProduct of historyProducts">
-        <article>
-            <img src="{{historyProduct.image}}" alt="{{historyProduct.title}}">
-        </article>
-
-    </li>
-</ul>
+<section>
+    <h2>Produits recemment consultés!</h2>
+    <ul class="wrap">
+        <li *ngFor="let historyProduct of historyProducts">
+            <article class="Box">
+                <img src="{{historyProduct.image}}" alt="{{historyProduct.title}}">
+                <img class="wishlist" src="{{historyProduct.wishlist}}"alt="favoris">
+                <div class="description">
+                    <h3>{{historyProduct.title}}</h3>
+                    <p>{{historyProduct.price}}</p>
+                    <!-- <button routerLink="/product/{{historyProduct.id}}">Découvrir le produit</button> -->
+                </div>
+            </article>
+            
+        </li>
+    </ul>
+</section>

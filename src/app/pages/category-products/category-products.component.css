@@ -74,7 +74,6 @@ h3 {
 button {
     position: absolute;
     background-color: #7461CC;
-    border: #7461CC solid 1px;
     width: 190px;
     bottom: -60px;
     left: 62px;
@@ -82,4 +81,8 @@ button {
     color: white;
     font-weight: 700;
     font-size: 15px;
+}
+button:hover{
+    background-color: #F5C24D;
+    color:black;
 }

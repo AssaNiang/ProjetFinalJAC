@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from 'src/app/mocks/products.mock';
+import { BasketProduct } from 'src/app/services/basket/basket.service';
 import { VisitedProductsService } from 'src/app/services/visited-products/visited-products.service';
 
 @Component({
@@ -15,4 +16,5 @@ export class VisitedProductComponent {
   ngOnInit() {
     this.historyProducts = this.visitedProducts.getHistory();
   }
+ 
 }
