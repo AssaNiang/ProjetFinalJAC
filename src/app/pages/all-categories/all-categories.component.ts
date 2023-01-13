@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 
 interface allCategoriesBloc {
+  idCategory : number,
   imageCategory : string;
   descriptionCategory : string;
   buttonCategory: string;
@@ -22,6 +23,7 @@ export class AllCategoriesComponent {
 allCategoryArray: allCategoriesBloc [] = [
 
   {
+    idCategory : 1,
     imageCategory : "assets/Images/allcategories_tshirt.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "T-Shirts",
@@ -29,6 +31,7 @@ allCategoryArray: allCategoriesBloc [] = [
   },
 
   {
+    idCategory : 2,
     imageCategory : "assets/Images/allcategories_jackets.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Vestes",
@@ -36,6 +39,7 @@ allCategoryArray: allCategoriesBloc [] = [
   },
 
   {
+    idCategory : 3,
     imageCategory : "assets/Images/allcategories_skirt.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Jupes",
@@ -43,6 +47,7 @@ allCategoryArray: allCategoriesBloc [] = [
   },
 
   {
+    idCategory : 4,
     imageCategory : "assets/Images/allcategories_pants.png",
     descriptionCategory : "Jetez un oeil à notre gamme de produit",
     buttonCategory: "Pantalons",
