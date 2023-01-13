@@ -1,7 +1,5 @@
 /* GENERALITEs */
 
-
-
 ul li {
     list-style: none;
 }
@@ -22,38 +20,36 @@ h2 {
 
 #panier article {
     width:60vw;
-    margin-right: 50px;
     justify-content:space-around;
+    align-items:end;
     margin-bottom: 50px;
-    /* border: #7461CC solid 1px; */
 }
 
 .description-article{
-    justify-content: center;
-    align-self: center;
-    padding: 15px;
+    justify-content: end;
+    align-self: end;
 }
 
 /* partie prix et bouton supprimer */
 .prix{
-    justify-content:center;
+    justify-content:end;
     align-items: center;
-    width: 280px;
-    
+    margin: 0;
 } 
 
 
 .suppression {
-        width: 250px;
+        width: 200px;
         height: 50px;
         padding: 15px 30px;
         color: black;
         border-radius: 5px;
         border: none;
         background-color: #7461CC;
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 20px;
     }
-    .suppression:hover{
+
+.suppression:hover{
         background-color: #32C4F6;
     }
