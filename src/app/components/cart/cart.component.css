@@ -21,37 +21,38 @@ h2 {
 
 
 #panier article {
-    width:50vw;
+    width:60vw;
+    margin-right: 50px;
     justify-content:space-around;
     margin-bottom: 50px;
     /* border: #7461CC solid 1px; */
 }
 
 .description-article{
-    justify-content: start;
-    align-self: start;
+    justify-content: center;
+    align-self: center;
+    padding: 15px;
 }
 
 /* partie prix et bouton supprimer */
 .prix{
-    justify-content:end;
-    align-items: start;
-    width: 180px;
-    border: blue solid 2px;
+    justify-content:center;
+    align-items: center;
+    width: 280px;
+    
 } 
 
-app-counter{
-    border: blue solid 2px;
-}
+
 .suppression {
-    
         width: 250px;
+        height: 50px;
         padding: 15px 30px;
         color: black;
         border-radius: 5px;
         border: none;
         background-color: #7461CC;
         font-size: 16px;
+        margin-right: 20px;
     }
     .suppression:hover{
         background-color: #32C4F6;

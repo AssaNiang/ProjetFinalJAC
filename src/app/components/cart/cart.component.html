@@ -6,16 +6,13 @@
 
         <ul class="flex column">
             <li *ngFor="let basketProduct of basket; let index = index">
-                <article class="flex">
+                <article class=" article flex">
                     <img src="{{basketProduct.product.image }}" alt="{{ basketProduct.product.title}}" width="150px">
                    
                     <!-- Partie nom de l'article - prix et description -->
                     <div class="description-article flex column">
-                        <h3>
-                            {{ basketProduct.product.title}} - {{ basketProduct.product.price}}€
-                        </h3>
-                        <p>{{ basketProduct.product.description}}</p>
-                        
+                        <h3>{{ basketProduct.product.title}}</h3>
+                        <p>{{ basketProduct.product.price}}€</p>
                     </div>
 
 
