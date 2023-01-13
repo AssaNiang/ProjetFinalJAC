@@ -16,6 +16,7 @@ import { VisitedProductComponent } from './components/visited-product/visited-pr
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './components/cart/cart.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { CartComponent } from './components/cart/cart.component';
 
     PaymentFormComponent,
      CartComponent,
+     CounterComponent,
 
 
   ],

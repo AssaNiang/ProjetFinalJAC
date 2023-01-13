@@ -20,7 +20,16 @@ input{
     width: 250px;
 }
 button {
-    width: 250px
+    width: 250px;
+    padding: 15px 30px;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    background-color: #7461CC;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #32C4F6;
 }
 .hasError {
     border : red solid 1px;
