@@ -31,12 +31,10 @@ import { CounterComponent } from './components/counter/counter.component';
     PaymentComponent,
     NotFoundComponent,
     CategoryProductsComponent,
-
     VisitedProductComponent,
-
     PaymentFormComponent,
-     CartComponent,
-     CounterComponent,
+    CartComponent,
+    CounterComponent,
 
 
   ],

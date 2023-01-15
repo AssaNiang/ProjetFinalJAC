@@ -8,8 +8,11 @@ import { ProductsService } from 'src/app/services/products/products.service';
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
+
+
 export class CounterComponent {
 count: number = 1;
+//ajout
 productP?:Product;
 quantity: number = 1;
 
