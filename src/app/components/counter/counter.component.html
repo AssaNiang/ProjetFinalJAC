@@ -1,6 +1,9 @@
 
 <div class="flex">
     <button (click)="decrement()">-</button>
-    <p>{{ count }}</p>
-    <button (click)="increment()">+</button>
+    <p>{{ this.count }}</p>
+    <button (click)="increment()" (click)="addToBasket()">+</button>
 </div>
+
+<p>Quantité: {{ this.count }}</p>
+<p>Prix: €</p>

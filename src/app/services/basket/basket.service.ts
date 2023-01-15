@@ -7,6 +7,7 @@ import { ProductsService } from '../products/products.service';
 export interface BasketProduct {
   product: Product;
   quantity: number;
+  
 }
 
 
