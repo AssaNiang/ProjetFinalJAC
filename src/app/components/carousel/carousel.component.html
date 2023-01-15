@@ -1,0 +1,30 @@
+
+
+<swiper
+      [slidesPerView]="3"
+      [spaceBetween]="20"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+
+    >
+      <ng-template swiperSlide class="animation">
+        <img style="height: 400px;" src="assets/Images/home_placeholder-bestseller-jacket.jpg">
+      </ng-template>
+      <ng-template swiperSlide class="animation">
+        <a routerLink="product/2">
+        <img style="height: 400px;" src="assets/Images/home_placeholder-bestseller-pants.PNG">
+        </a>
+    </ng-template>
+      <ng-template swiperSlide class="animation">
+        <img style="height: 400px;" src="assets/Images/home_placeholder-bestseller-skirt.jpg">
+      </ng-template>
+      <ng-template swiperSlide class="animation">
+        <img style="height: 400px;" src="assets/Images/home_placeholder-bestseller-tshirt.jpg">
+      </ng-template>
+      <ng-template swiperSlide class="animation">
+        <img style="height: 400px;" src="assets/Images/pants/product_pantalon-fushia1.png">
+    </ng-template>
+      <ng-template swiperSlide class="animation">
+        <img style="height: 400px;" src="assets/Images/pants/product_pantalon-vert1.png">
+      </ng-template>
+    </swiper>
