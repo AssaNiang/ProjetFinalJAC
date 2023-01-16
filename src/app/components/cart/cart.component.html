@@ -2,17 +2,19 @@
 
     <div id="panier" >
 
-        <h2>MON PANIER</h2>
+       
 
         <ul class="flex column">
             <li *ngFor="let basketProduct of basket; let index = index">
-                <article class=" article flex">
+                <article class="article flex">
                     <img src="{{basketProduct.product.image }}" alt="{{ basketProduct.product.title}}" width="150px">
                    
                     <!-- Partie nom de l'article - prix et description -->
-                    <div class="description-article flex column">
-                        <h3>{{ basketProduct.product.title}}</h3>
-                        <p>{{ basketProduct.product.price}}€</p>
+                    <div class="description flex column">
+                        <p class="titre">{{ basketProduct.product.title}}</p>
+                        <br>
+                        <small class="titre">{{ basketProduct.product.description }}</small>
+                        <p class="prix-article">{{ basketProduct.product.price}}€</p>
                     </div>
 
 

@@ -4,29 +4,30 @@ main{
     width: 60vw;
     margin: 0 auto;
 }
+h2{
+    margin-bottom: 50px;
+}
 
 /*  BLOC LIVRAISON */
 
 .modalites{
     margin-left: 100px;
+    margin-top: 50px;
 }
-.modalites #checkbox-livraison {
-    margin-right: 10px;
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
+.modalites label{
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+.modalites .domicile, .relais {
     vertical-align: middle;
-    border: 3px solid black;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
-    cursor: pointer;
+    margin-bottom: 8px;
 }
 
-#checkbox-livraison:checked {
-    background-color: #7461CC;
-}
+
 
 
 
@@ -50,7 +51,7 @@ main{
 
 #promo-total form input {
     padding: 8px;
-    border: black solid 2px;
+    border:  #7461CC solid 2px;
     background-color: var(--color-white);
     font-size: 18px;
     color: black;
@@ -66,6 +67,7 @@ main{
     border-radius: 5px;
     border: none;
     background-color: #7461CC;
+    margin-left: 25px;
 }
 
 
@@ -77,6 +79,7 @@ main{
 #montant-panier table tbody tr td {
     padding: 10px 180px 10px 0;
     text-align: right;
+    font-size: 25px;
 }
 
 
@@ -85,6 +88,9 @@ main{
 .commander-shopper {
     flex-direction: column;
     margin-top: 50px;
+}
+.commander-shopper .shop:hover{
+    color: #32C4F6;
 }
 
 /* bouton commander */ 
