@@ -1,4 +1,4 @@
-<img src="assets/Images/home_banner.png">
+<img src="assets/Images/home_banner.png" width="100%">
 <!-- créer un component "banner" pour les pages qui ont une bannière ? -->
 
 <article *ngFor="let item of homeArray">
@@ -20,23 +20,8 @@
 
 <h2>Best-sellers par catégories</h2>
 
-<!-- Inserer CARROUSEL le jour où je saurai en faire un correctement -->
-
-
-
-
-
-<article class=carrouselContent >
-
-    <div class="carrousel">
-
-        <img *ngFor="let item of homeCarrouselArray" src="{{ item.imageCarrousel }}" alt="{{ item.altCarrousel }}">
-
-    </div>
-
-</article>
-
-
+<!-- le carrousel enfin -->
+<app-carousel></app-carousel>
 
 
 <h2>Notre actualité</h2>

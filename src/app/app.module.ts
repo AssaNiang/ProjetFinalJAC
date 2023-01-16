@@ -17,6 +17,8 @@ import { PaymentFormComponent } from './components/payment-form/payment-form.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './components/cart/cart.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SwiperModule } from 'swiper/angular'; 
 
 
 @NgModule({
@@ -37,13 +39,15 @@ import { CounterComponent } from './components/counter/counter.component';
     PaymentFormComponent,
      CartComponent,
      CounterComponent,
+     CarouselComponent,
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
