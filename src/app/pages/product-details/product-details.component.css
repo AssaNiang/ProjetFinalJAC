@@ -89,6 +89,7 @@ button{
     cursor: pointer; 
     border:none;
     border-radius: 10px;
+    border:none;
 }
 button:hover{
     background-color: #32C4F6;
