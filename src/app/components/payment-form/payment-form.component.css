@@ -12,7 +12,7 @@ div {
     margin-bottom: 10px;
 }
 .coordonnees, .billing, .bank {
-    border: black solid 2px;
+    /* border: #7461CC solid 1px; */
     padding: 25px;
 }
 
@@ -33,9 +33,6 @@ button:hover{
 }
 .hasError {
     border : red solid 1px;
-}
-.isOk{
-    border : green solid 1px;
 }
 
 

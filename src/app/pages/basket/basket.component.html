@@ -1,20 +1,21 @@
 <main>
 
-
+    <h2>Mon panier</h2>
 <app-cart></app-cart>
+
 
 
 <div id="livraison flex">
 
-    <h2>LIVRAISON</h2>
+    <h2>Livraison</h2>
 
     <form class="modalites">
         <div class="domicile">
-            <input id="checkbox-livraison" type="checkbox">
+            <input name="livraison" id="domicile" type="radio">
             <label type="text">A domicile</label>
         </div>
         <div class="relais">
-            <input id="checkbox-livraison" type="checkbox">
+            <input name="livraison" id="relais" type="radio">
             <label type="text">Point relais</label>
         </div>
     </form>
@@ -24,7 +25,7 @@
 
 <div id="promo-total">
     <div class="code-promo">
-        <h2>CODE PROMO</h2>
+        <h2>Code promo</h2>
         <form class="flex">
             <input type="text">
             <button type="submit" class="violet">APPLIQUER</button>
@@ -45,8 +46,8 @@
                     <td class="violet">0 €</td>
                 </tr>
                 <tr>
-                    <td>Total</td>
-                    <td class="violet">{{ this.basketService.basketTotalPrice}} €</td>
+                    <td><b>Total</b></td>
+                    <td class="violet"><b>{{ this.basketService.basketTotalPrice}} €</b></td>
                 </tr>
             </tbody>
         </table>
@@ -56,7 +57,7 @@
         <a routerLink="/payment">
             <button class="bouton-commander violet">COMMANDER</button>
         </a>
-        <a routerLink="/category-products">Continuez à shopper</a>
+        <a class="shop" routerLink="/category-products">Continuez à shopper</a>
     </div>
 
 </div>

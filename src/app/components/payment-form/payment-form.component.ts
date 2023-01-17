@@ -45,7 +45,7 @@ export class PaymentFormComponent {
       card_cvc: [null, [Validators.required]]
     });
   }
-
+ 
 
 
   // Fonction pour enregistrer le formulaire sur les coordonnees du clien et livraison
@@ -61,8 +61,8 @@ export class PaymentFormComponent {
       });
     }
     // console.log("enregistré")
-    //console.log(this.coordonneesForm.value);
-    console.log("tableau d'erreur", this.validationCoordonneesError);
+   // console.log(this.coordonneesForm.value);
+   // console.log("tableau d'erreur", this.validationCoordonneesError);
   }
 
   registerBilling() {
@@ -92,7 +92,10 @@ export class PaymentFormComponent {
       });
     }
   
+  
     // console.log("payé");
    // console.log(this.paymentForm.value);
   }
+
+ 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product, PRODUCTS } from 'src/app/mocks/products.mock';
 import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 
 @Component({
@@ -8,6 +9,10 @@ import { BasketProduct, BasketService } from 'src/app/services/basket/basket.ser
 })
 export class CartComponent {
   basket: BasketProduct[] = []; 
+
+ 
+
+
 
   constructor(public basketService: BasketService) {};
 
@@ -24,4 +29,5 @@ export class CartComponent {
   this.getbasket();
   
  }
+
 }

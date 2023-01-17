@@ -33,13 +33,11 @@ import { SwiperModule } from 'swiper/angular';
     PaymentComponent,
     NotFoundComponent,
     CategoryProductsComponent,
-
     VisitedProductComponent,
-
     PaymentFormComponent,
      CartComponent,
      CounterComponent,
-     CarouselComponent,
+     CarouselComponent
 
 
   ],
