@@ -1,16 +1,16 @@
-<img src="assets/Images/home_banner.png" width="100%">
+<img class="bannerHome" src="assets/Images/home_banner.png" width="100%">
 <!-- créer un component "banner" pour les pages qui ont une bannière ? -->
 
 <article *ngFor="let item of homeArray">
 
-    <div class="flexboxBig">
+    <div class="flexboxBig" [class.flexboxReverse]="item.idHome % 2 === 0">
 
         <img src="{{ item.imageHome }}" class="imgBloc">
 
         <div class="flexboxSmall">
             <h2> {{ item.titleHome }}</h2>
             <p>{{ item.descriptionHome }} </p>
-            <p class=linkShop><a routerLink="{{ item.linkHome }}">{{ item.buttonHome}} </a></p>
+            <p class=linkShop><a routerLink="{{ item.linkHome }}">{{ item.buttonHome }} </a></p>
         </div>
 
     </div>
