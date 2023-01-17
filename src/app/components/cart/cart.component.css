@@ -1,0 +1,62 @@
+/* GENERALITEs */
+
+ul li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+h2 {
+    margin-bottom: 80px;
+    margin-top:80px;
+    text-align: center;
+}
+p {
+    margin: 3px;
+}
+/*BLOC PANIER */
+
+
+#panier article {
+    width:60vw;
+    margin-bottom: 50px;
+    position: relative;
+    /* border:solid #7461CC 3px; */
+}
+
+.description {
+    justify-content:space-around;
+    margin: 0 150px 0 25px;
+    text-align: justify;
+}
+
+
+/* partie prix et bouton supprimer */
+.prix{
+   
+    margin: 0;
+} 
+
+
+.suppression {
+        width: 150px;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        background-color: #7461CC;
+        font-size: 14px;
+        position: absolute;
+       bottom: 20px;
+       right: 10px;
+       display:block;
+    }
+
+.suppression:hover{
+        background-color: #32C4F6;
+    }

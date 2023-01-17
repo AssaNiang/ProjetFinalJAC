@@ -1,0 +1,13 @@
+
+<div class="counter flex column">
+    <div class="quantite">
+        <p>Quantité:</p>
+        <div class="bouton flex">
+            <button (click)="decrement()">-</button>
+            <p>{{ this.count }}</p>
+            <button (click)="increment()" (click)="addToBasket()">+</button> 
+        </div>
+        <p>Prix: €</p>
+        
+    </div>
+</div>

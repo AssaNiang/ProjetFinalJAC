@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin: 0 80px 50px; 
+    justify-content: center;
+    align-items: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.coordonnees, .billing, .bank {
+    /* border: #7461CC solid 1px; */
+    padding: 25px;
+}
+
+input{
+    width: 250px;
+}
+button {
+    width: 250px;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #7461CC;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #32C4F6;
+}
+.hasError {
+    border : red solid 2px;
+}
+h3{
+    color: #7461CC;
+}
+
+

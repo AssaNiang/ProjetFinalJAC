@@ -1,0 +1,16 @@
+<section>
+    <h2>Categorie Pantalons</h2>
+    <ul class="wrap">
+        <li *ngFor="let item of category">
+            <article class="Box">
+                <img src="{{ item.image[0]}}" alt="{{item.title}}">
+                <img class="wishlist" src="{{item.wishlist}}"alt="favoris">
+                <div class="description">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.price}} €</p>
+                    <button routerLink="/product/{{item.id}}">Découvrir le produit</button>
+                </div>
+            </article>
+        </li>
+    </ul>
+</section>

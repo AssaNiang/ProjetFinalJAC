@@ -1,0 +1,35 @@
+<p class="bandeauTop"> Bienvenue ! Lancement de notre site e-commerce ! </p>
+
+<img class="bannerHome" src="assets/Images/home_banner.png" width="100%">
+<!-- créer un component "banner" pour les pages qui ont une bannière ? -->
+
+<article *ngFor="let item of homeArray">
+
+    <div class="flexboxBig" [class.flexboxReverse]="item.idHome % 2 === 0">
+
+        <img src="{{ item.imageHome }}" class="imgBloc">
+
+        <div class="flexboxSmall">
+            <h2> {{ item.titleHome }}</h2>
+            <p>{{ item.descriptionHome }} </p>
+            <p class=linkShop><a routerLink="{{ item.linkHome }}">{{ item.buttonHome }} </a></p>
+        </div>
+
+    </div>
+
+
+</article>
+
+<h2>Best-sellers par catégories</h2>
+
+<!-- le carrousel enfin -->
+<app-carousel></app-carousel>
+
+
+<h2>Notre actualité</h2>
+
+<div class="video">
+
+    <iframe class="actualite-video" width="810" height="506" src="https://www.youtube.com/embed/ycdrrUcpD8c?list=PLQA8WTjEMjzuFaLGekp-E0z5a9w5K6vUi" title="Infraction - Fashion Music /Background Music (Royalty Free Music) (No Copyright music) / Go Girl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>

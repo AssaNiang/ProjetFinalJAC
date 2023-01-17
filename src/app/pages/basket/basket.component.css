@@ -1,0 +1,110 @@
+/* GENERALITES */ 
+
+main{
+    width: 60vw;
+    margin: 0 auto;
+}
+h2{
+    margin-bottom: 50px;
+    color: #7461CC;
+}
+
+/*  BLOC LIVRAISON */
+
+.modalites{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.modalites label{
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+.modalites .domicile, .relais {
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+/*CODE PROMO */
+#promo-total {
+    margin-top: 50px;
+}
+
+hr {
+    margin: 80px 0;
+    border: #7461CC solid 1px;
+}
+
+#promo-total h3 {
+    margin-bottom: 50px;
+}
+
+#promo-total form {
+    gap: 30px;
+}
+
+#promo-total form input {
+    padding: 8px;
+    border:  #7461CC solid 2px;
+    background-color: var(--color-white);
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+/* bouton appliquer */
+#promo-total form button {
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #7461CC;
+    margin-left: 25px;
+}
+
+
+#promo-total form button:hover {
+    color: white;
+    background-color: #32C4F6;
+}
+
+#montant-panier table tbody tr td {
+    padding: 10px 180px 10px 0;
+    text-align: right;
+    font-size: 25px;
+}
+
+
+/* BOUTON COMMANDER ET CONTINUER A SHOPPER */
+
+.commander-shopper {
+    flex-direction: column;
+    margin-top: 50px;
+}
+.commander-shopper .shop:hover{
+    color: #32C4F6;
+}
+
+/* bouton commander */ 
+.bouton-commander {
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #7461CC;
+    margin: 10px 100px 80px 0;
+}
+
+.bouton-commander:hover {
+    background-color: #32C4F6;
+}

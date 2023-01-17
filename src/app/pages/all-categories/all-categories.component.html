@@ -1,0 +1,34 @@
+
+<div class="bannerPosition">
+
+    <img class="bannerCategory" src="assets/Images/allcategories_banner.png" width="100%">
+    <p class="textBanner">Energisez vos tenues 
+        <br>avec nos pièces 
+        <br>incoutournables</p>
+
+</div>
+
+
+<h1>Toutes nos catégories</h1>
+
+
+
+<!-- Boucle des objets blocs -->
+
+
+<article  *ngFor="let item of allCategoryArray" >
+
+    <!-- condition: isoler les id pair pour les inverser (flexbox en row-reverse) -->
+
+    <div class="flexboxBig" [class.flexboxReverse]="item.idCategory % 2 === 0">
+
+        <img src="{{ item.imageCategory }}">
+
+        <div class="flexboxSmall">
+            <p>{{ item.descriptionCategory }} </p>
+            <a routerLink="{{ item.linkCategory }}">{{ item.buttonCategory }} </a>
+        </div>
+
+    </div>
+
+</article>

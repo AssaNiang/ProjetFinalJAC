@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+button{
+    border: none;
+    margin: 10px;
+    background-color: white;
+    font-size: 25px;
+}
+p{
+    font-size: 15px;
+}
+.quantite {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+}
+.bouton {
+    margin-top: -20px;
+}
+

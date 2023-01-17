@@ -1,0 +1,29 @@
+<header class="flex">
+    <a routerLink="">
+        <img src="assets/Images/logo/JAC_logo.png" alt="icone-marque-JAC" width="150px">
+    </a>
+
+
+   
+
+    <nav class="flex">
+        <form>
+            <input type="text" placeholder="Rechercher">
+        </form>
+      
+
+        <ul class="flex">
+            <li><a routerLink="/category-products">Catégories</a></li>
+            <li><a routerLink="/a-propos">A propos</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+
+        <div class="icones flex">
+            <a routerLink="/compte"><img src="assets/Images/icons/icon_Header-myaccount.png" alt="icone-compte"></a>
+            <a routerLink="/favoris"><img src="assets/Images/icons/icon_Header-heart.png" alt="icone-coeur"></a>
+            <a routerLink="/basket"><img src="assets/Images/icons/icon_Header-basket.png" alt="icone-panier">
+                <span>{{ this.basketService.productQuantity }}</span></a>
+        </div>
+      
+    </nav>
+</header>

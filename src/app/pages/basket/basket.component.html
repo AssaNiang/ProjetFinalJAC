@@ -1,0 +1,66 @@
+<main>
+
+    <h2>Mon panier</h2>
+<app-cart></app-cart>
+
+<hr>
+
+
+<div id="livraison flex">
+
+    <h2>Livraison</h2>
+
+    <form class="modalites">
+        <div class="domicile">
+            <input name="livraison" id="domicile" type="radio">
+            <label type="text">A domicile</label>
+        </div>
+        <div class="relais">
+            <input name="livraison" id="relais" type="radio">
+            <label type="text">Point relais</label>
+        </div>
+    </form>
+</div>
+
+
+
+<div id="promo-total">
+    <div class="code-promo">
+        <h2>Code promo</h2>
+        <form class="flex">
+            <input type="text">
+            <button type="submit" class="violet">Appliquer</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="montant-panier">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Sous-total</td>
+                    <td class="violet">{{ this.basketService.basketTotalPrice}} €</td>
+                </tr>
+                <tr>
+                    <td>Livraison</td>
+                    <td class="violet">0 €</td>
+                </tr>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td class="violet"><b>{{ this.basketService.basketTotalPrice}} €</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="commander-shopper">
+        <a routerLink="/payment">
+            <button class="bouton-commander violet">Commander</button>
+        </a>
+        <a class="shop" routerLink="/category-products">Continuez à shopper</a>
+    </div>
+
+</div>
+
+</main>
