@@ -87,11 +87,11 @@ button{
     font-weight: 700;
     font-size: 15px;
     cursor: pointer; 
+    border:none;
     border-radius: 10px;
 }
 button:hover{
     background-color: #32C4F6;
-    color:black;
 }
 /* je veux entre 1150px et 1380px les minatures soient en bas de l'image principale*/
 @media (min-width:1150px) and (max-width:1380px)  {
