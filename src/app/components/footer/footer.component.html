@@ -64,33 +64,34 @@
 
                 <article *ngFor="let item of footerRSArray">
 
-                    <a routerLink="{{ item.footerLinkRS }}"> <img src="{{ item.footerLogoRS }}" alt="{{ item.footerAltRS }}"> </a>
+                    <a routerLink="{{ item.footerLinkRS }}"> <img src="{{ item.footerLogoRS }}" alt="{{ item.footerAltRS }}" width="40px" height="40px"> </a>
 
                 </article>
 
             </div>
 
+            <div class="paymentFooter">
+
+                <img src="assets/Images/icons/icon_Footer-payment.png" alt="cartes de paiment acceptées" width="190px" height="40px">
+
+            </div>
 
             <div class="logoFooter">
 
                 <a routerLink="/">
-                    <img src="assets\Images\logo\JAC_logo-transparent-white-border.png" alt="logo JAC">
+                    <img src="assets\Images\logo\JAC_logo-transparent-white-border.png" alt="logo JAC" width="130px" height="58px">
                 </a>
     
             </div>
 
-
-            <div class="paymentFooter">
-
-                <img src="assets/Images/icons/icon_Footer-payment.png" alt="cartes de paiment acceptées">
-
-            </div>
 
         </div>
 
         <p class="copyrightFooter">Copyright 2022</p>
 
     </div>
+
+    <button><a href="#top"> 🡅 </a></button>
   
 
 </footer>
