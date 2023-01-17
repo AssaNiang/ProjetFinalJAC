@@ -6,6 +6,7 @@ main{
 }
 h2{
     margin-bottom: 50px;
+    color: #7461CC;
 }
 
 /*  BLOC LIVRAISON */
@@ -36,7 +37,7 @@ h2{
     margin-top: 50px;
 }
 
-#promo-total hr {
+hr {
     margin: 80px 0;
     border: #7461CC solid 1px;
 }
@@ -63,7 +64,7 @@ h2{
 /* bouton appliquer */
 #promo-total form button {
     padding: 15px 30px;
-    color: black;
+    color: white;
     border-radius: 5px;
     border: none;
     background-color: #7461CC;
@@ -72,7 +73,7 @@ h2{
 
 
 #promo-total form button:hover {
-    color: black;
+    color: white;
     background-color: #32C4F6;
 }
 
@@ -95,7 +96,7 @@ h2{
 
 /* bouton commander */ 
 .bouton-commander {
-    color: black;
+    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
