@@ -38,10 +38,8 @@ p {
 
 /* partie prix et bouton supprimer */
 .prix{
-   
     margin: 0;
 } 
-
 
 .suppression {
         width: 150px;
@@ -52,9 +50,9 @@ p {
         background-color: #7461CC;
         font-size: 14px;
         position: absolute;
-       bottom: 20px;
-       right: 10px;
-       display:block;
+        bottom: 20px;
+        right: 10px;
+        display:block;
     }
 
 .suppression:hover{
