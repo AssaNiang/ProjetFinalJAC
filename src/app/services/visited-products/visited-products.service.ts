@@ -17,6 +17,7 @@ export class VisitedProductsService {
   getHistory() {
     //on recupere l'history dans localStorage avec getItem avec la clé 'history'
     const historytab = localStorage.getItem('history');
+    //si historytab existe  
     if (historytab) {
 
       // on transforme l'history en objet
@@ -31,7 +32,7 @@ export class VisitedProductsService {
   addProductToHistory(product: Product) {
     //recuperation de history(panier)
     const recupHistory = this.getHistory();
-    //verifier si le produit est deja dans le panier historique
+    //verifier si le produit est deja dans le panier historique 
     const productFromHistory = recupHistory.find((historyProduct: Product) => historyProduct.id === product.id)
     console.log("productFromHistory", productFromHistory);
     
