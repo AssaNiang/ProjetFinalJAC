@@ -31,7 +31,9 @@ export class HomeComponent {
       idHome: 2,
       imageHome : "assets/Images/home_yellow-square.png",
       titleHome: "L'intemporalité en couleur pop",
-      descriptionHome : "Une couleur coup de coeur ? Nos pièces incontournables se déclinent quelques soient vos préférences."
+      descriptionHome : "Une couleur coup de coeur ? Nos pièces incontournables se déclinent quelques soient vos préférences.",
+      buttonHome: "Qui sommes nous ?",
+      linkHome: "/about"
     }
   ]  
 

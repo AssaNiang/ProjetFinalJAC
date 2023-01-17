@@ -1,3 +1,11 @@
+.bandeauTop{
+    background-color: #7461CC;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin: 5px 0 2px 0;
+}
+
 .flexboxSmall{
     display: flex;
     flex-direction: column;
