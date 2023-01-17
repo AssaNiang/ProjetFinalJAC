@@ -6,8 +6,22 @@
 }
 
 .bannerCategory{
-    text-align: center;
+    width: 100%;
 }
+
+.bannerPosition{
+    position: relative;
+}
+
+.textBanner{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+}
+
 
 h1{
     color: #7461CC;
@@ -67,6 +81,11 @@ img{
 }
 
 @media (max-width:900px){
+
+    h2{
+        font-size: clamp (20px, 10vw, 40px);
+        
+    }
 
     .bannerCategory{
         width: 100%;
