@@ -22,7 +22,7 @@ input{
 button {
     width: 250px;
     padding: 15px 30px;
-    color: black;
+    color: white;
     border-radius: 5px;
     border: none;
     background-color: #7461CC;
@@ -32,7 +32,10 @@ button:hover{
     background-color: #32C4F6;
 }
 .hasError {
-    border : red solid 1px;
+    border : red solid 2px;
+}
+h3{
+    color: #7461CC;
 }
 
 

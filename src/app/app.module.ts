@@ -19,6 +19,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular'; 
+import { PaymentSucessComponent } from './pages/payment-sucess/payment-sucess.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SwiperModule } from 'swiper/angular';
     CategoryProductsComponent,
     VisitedProductComponent,
     PaymentFormComponent,
+    PaymentSucessComponent,
      CartComponent,
      CounterComponent,
      CarouselComponent
