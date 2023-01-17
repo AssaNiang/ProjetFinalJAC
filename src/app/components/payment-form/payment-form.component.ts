@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment-form',
@@ -18,7 +19,8 @@ export class PaymentFormComponent {
   validationPaymentError: string[] = [];
 
   // on appelle le FormBuilder d'angular dans le constructeur
-  constructor(private formBuilder: FormBuilder) { };
+  constructor(private formBuilder: FormBuilder,
+    private router: Router) { };
 
   // on definit la structure typeScript des formulaires
   ngOnInit() {
@@ -93,9 +95,19 @@ export class PaymentFormComponent {
     }
   
   
+  
     // console.log("payé");
    // console.log(this.paymentForm.value);
   }
+  payment(){
+    if(!this.coordonneesForm.invalid && !this.billingForm.invalid && !this.paymentForm.invalid){
+
+      this.router.navigate(['payment-sucess']);
+    }
+  }
+
+
+
+  }
 
  
-}
