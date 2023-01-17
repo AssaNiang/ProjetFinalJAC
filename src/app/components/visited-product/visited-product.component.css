@@ -71,19 +71,3 @@ h3 {
     top: 20px;
     right: 30px;
 }
-
-button {
-    position: absolute;
-    background-color: #7461CC;
-    width: 190px;
-    bottom: -60px;
-    left: 62px;
-    height: 50px;
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-}
-button:hover{
-    background-color: #F5C24D;
-    color:black;
-}
